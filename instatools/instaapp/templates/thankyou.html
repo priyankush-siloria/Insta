@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="login-section py-5 thankyou-page" style="padding: 203px 0 170px !important;">
+	<h1 class="text-center pt-5 pb-2">
+	    Thank you for your order.
+	</h1>
+	<a href="{% url 'homepage' %}" class="btn btn-default btn-block login-btn thankyou-btn mt-4">
+	  Go To Home	
+	</a>
+</section>
+{% endblock %}
