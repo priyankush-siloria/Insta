@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Html goes here...... -->
+<section class="my-account-page mt-6">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="frofile-pic">
+					<img class="clip-circle" src="{% static 'img/profile-pic.jpg' %}">
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-7">
+				<div class="profile-name mrg">
+					<h4>Kangana Ranaut</h4>
+				</div>
+				<div class="follower-amount">
+					<div class="post"><span>{{profile_data.posts}}</div>
+					<div class="post"><span>{{profile_data.total_followers}}</div>
+					<div class="post"><span>{{profile_data.total_follows}}</div>
+				</div>
+				<div class="detail">
+					<h3 class="rhpd">KANG</h3>
+					<span>🇳🇱CEO <a class="notranslate" href="/bodyengineers/">@faishondesigner</a>
+						<br>▪️DJ producer<br>
+						▪️Musclemania World Champion<br>
+						▪️Aerospace Engineer<br>
+						▪️ <a class="notranslate" href="/ruleoneproteins/">@ruleoneproteins</a> Athlete<br>  NEW TRACK THE ALCHEMIST ⬇️</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="pending-follower">
+						<div class="pending"><span>{{profile_data.pending_follow_request}}</span>pending followers</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="accept-btn">
+		<div class="container">
+			<div class="customButton">
+				<a href=""><div class="click-accept">
+					Click here to accept all Pending Followers
+				</div></a>
+			</div>
+		</div>
+	</section>
+	{% endblock %}

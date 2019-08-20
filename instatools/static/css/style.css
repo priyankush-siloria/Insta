@@ -1,0 +1,589 @@
+img {
+    width: 100%;
+}
+ul{
+	margin: 0px !important;
+	padding: 0px;
+}
+li.nav-item {
+    padding: 0 20px;
+}
+a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+/************** wrapper section ****************/
+.wraper {
+    font-family: Roboto,sans-serif;
+    line-height: 1.5;
+}
+nav .toggle-btn {
+    border: 1px solid #fff;
+    padding: 8px 11px;
+}
+nav .toggle-btn:focus {
+    outline: 0;
+}
+nav .toggle-btn .navbar-toggler-icon {
+    width: inherit;
+    height: inherit;
+}
+nav .toggle-btn .navbar-toggler-icon i {
+    color: #fff;
+}
+.banner-section {
+    background: url(../img/1493.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+}
+.mbr-fullscreen {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.banner-heading {
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    /* top: 55%; */
+    /* left: 28%; */
+    /* width: 40%; */
+}
+a.nav-link {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+a.navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+}
+nav.navbar {
+    width: 100%;
+    z-index: 999;
+    background: #00000014;
+    top: 0;
+}
+a.order {
+    background: #3f51b5;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 44px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 3px 3px 4px 1px #000000d9;
+}
+.mob-image {
+    width: 21%;
+    position: absolute;
+    top: 69px;
+    right: 69px;
+}
+.banner-heading h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 0px 3px #fff;
+    font-size: 44px;
+}
+.banner-heading p {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 0px 3px #fff;
+    
+}
+/* Securely manage your Instagram */
+section.manage {
+
+}
+.manage-head {
+    font-weight: 400;
+    letter-spacing: normal;
+    font-family: Roboto,sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+}
+/* Feature Packed css */
+section.Feature {
+    padding: 3rem 0;
+    background: #eef7ff;
+    text-align: center;
+}
+section.Feature h2 {
+    font-size: 45px;
+    line-height: 48px;
+    letter-spacing: normal;
+    padding-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+section.Feature h2:before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #aeaeae;
+    width: 8rem;
+    bottom: initial;
+    top: 53px;
+    left: 70px;
+}
+.feature-box {
+    padding: 15px;
+    box-shadow: 0 0 6px 1px #00000061;
+    border-radius: 5px;
+    height: 100%;
+}
+.feature_icons {
+    display: inline-block;
+    background: #4f9ee19c;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 7.5;
+    text-align: center;
+}
+section.Feature [class*="col-"] {
+    margin-bottom: 30px;
+}
+section.pod_management {
+    padding: 4rem 0;
+}
+img.pod-img {
+    width: 80%;
+}
+section.effortlessly_track {
+    background: url(../img/follow.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 7rem 0;
+}
+section.mobile_life {
+    padding: 5em 0;
+}
+footer.footer {
+    padding: 14px 0;
+    letter-spacing: 1px;
+}
+ul.footer-list li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 14px;
+    font-weight: 600;
+}
+ul.footer-list li a {
+    color: #000;
+}
+ul.footer-list li a:hover {
+    color: #000 !important;
+}
+span.socialtools {
+    font-weight: 600;
+}
+.f-24 {
+    padding: 12px 0;
+}
+/**************** Login Section Start *****************/
+.login-section {
+    background-color: #eef7ff;
+}
+.login-section h1 {
+    font-size: 56px;
+    line-height: 1.35;
+    letter-spacing: -.02em;
+}
+.login-section .login-form {
+    margin: auto;
+    width: 40%;
+    background: #ffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+    -o-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+    box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+
+}
+.login-section .login-form .login-form-bg {
+    padding: 50px 50px;
+}
+.login-section .login-form .login-headline {
+    font-size: 24px;
+    line-height: 32px;
+}
+.login-section .login-form .acc-heading {
+    color: #9e9e9e;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.login-section .login-form .forget-heading {
+    color: #9e9e9e;
+    font-weight: 700;
+    line-height: 17px;
+    font-size: 13px;
+}
+.login-section .login-form .forget-heading a:hover {
+    color: #007bff !important;
+}
+.login-section .login-form .signup-heading-account a:hover {
+    color: #007bff !important;
+}
+.login-section .login-form .formRow {
+    position: relative;
+    width: 100%;
+}
+
+.login-section .login-form .formRow--item {
+    display: block;
+    width: 100%;
+}
+
+.login-section .login-form .formRow--input {
+    position: relative;
+    padding: 15px 3px 12px;
+    width: 100%;
+    outline: none;
+    /* border: solid 1px #95989a; */
+    border-radius: 4px;
+    color: #2c3235;
+    letter-spacing: .2px;
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    border-bottom: 1px solid #9e9e9e;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+.login-section .login-form .formRow--input-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.login-section .login-form .formRow--input-wrapper.active {
+    border-bottom: 1px solid #1976d2 !important;
+}
+.login-section .login-form .formRow--input-wrapper.active .eye-icon {
+    color: #1976d2;
+}
+.login-section .login-form .formRow--input-wrapper.active .placeholder {
+    top: -5px;
+    color: #1976d2;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-size: 11px;
+    line-height: 14px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.login-section .login-form .formRow--input-wrapper.active textarea {
+    border-bottom:0 !important;
+}
+.login-section .login-form .formRow--input-wrapper.active .formRow--input:not(:focus):not(:hover) ~ .placeholder { color: #1976d2;}
+
+.login-section .login-form .formRow--input-wrapper .formRow--input:focus, .formRow--input-wrapper .formRow--input:hover { border-color: #2b2b2bde; }
+
+.login-section .login-form .formRow .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    color: #95989a;
+    white-space: nowrap;
+    letter-spacing: .2px;
+    font-weight: normal;
+    font-size: 16px;
+    -webkit-transition: all, .2s;
+    transition: all, .2s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: -7px;
+}
+.login-section .login-form .formRow--item .eye-icon {
+    position: absolute;
+    top: 16px;
+    right: 4px;
+    font-size: 19px;
+    color: #9e9e9e;
+}
+.login-section .login-form form .login-btn {
+    background-color: #f5f5f5;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    transition: 0.2s ease-in 0.1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
+    0 2px 2px 0 rgba(0,0,0,.14),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+.login-section .login-form form .login-btn:hover {
+    background-color: #dcdcdc;
+}
+.login-section .login-form form .signup-heading-account {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+.login-section .login-form form .count-icon {
+    color: #9e9e9e;
+    font-size: 12px;
+}
+.login-section .forget-heading {
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    .login-section .login-form {
+        width: 83%;
+    }
+    footer .footer-text1 {
+        text-align: center;
+    }
+    footer .footer-name {
+     justify-content: center !important;
+ }
+}
+.clip-circle {
+  clip-path: circle(45% at center);
+  border-radius: 50%;
+}
+.mt-6 {
+    margin-top: 4rem;
+}
+.profile-name {
+    text-align: center;
+}
+.mrg {
+    margin-top: 35px;
+}
+.profile-name h4 {
+    font-weight: 600;
+    font-size: 45px;
+}
+.follower-amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 6px 0;
+}
+.follower-amount div {
+    padding: 0 10px;
+}
+.follower-amount span {
+    font-weight: 700;
+    padding: 0 8px;
+}
+.pending-follower {
+    text-align: center;
+    background: linear-gradient( rgba(156, 32, 32, 0.5), rgba(55, 51, 50, 0.5) ), url(../img/4911.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.pending span {
+    padding: 0 22px;
+    color: #fff;
+}
+.pending {
+    font-size: 4vw;
+    font-weight: 800;
+    padding: 80px 0;
+    color: #ddd6d6;
+}
+section.accept-btn {
+    text-align: center;
+    padding: 19px 0;
+}
+.click-accept {
+    padding: 20px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.customButton {
+  border-radius: 8px;
+  background: radial-gradient(circle at 30% 107%, #d5c200 0%, #d1bf00 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 0 8px 30px -10px #FF0082;
+  font-size: 16px;
+  border-style: none;
+  transition: 0.1s linear;
+}
+.customButton:active {
+  transform: translateY(10px) scale(0.98);
+  box-shadow: 0 0 20px -10px #FF0082;
+  background-color: #C70069;
+}
+.customButton:focus {
+  outline: 0;
+}
+.detail span {
+    line-height: 2;
+}
+.detail {
+    margin-top: 15px;
+    padding-left: 12px;
+}
+/******************* 22/7/19 (Order Page) *********************/
+.order-section .order-detail-side {
+    background: #ffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+       -moz-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+         -o-box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+            box-shadow: 0px 3px 5px -4px rgb(0, 0, 0);
+}
+.order-section .order-detail-side .order-pricing-heading {
+    color: #000;
+}
+.order-section .order-detail-side .price-month span {
+    background: radial-gradient(circle at 28% 91%, #e82512 0%, #d8a900 0%, #e63625 45%, #613e56 60%, #285AEB 90%);
+    /* background: linear-gradient(90deg,#b4538f,#6c63ff); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.order-section .order-detail-side .follow-requests .order-list {
+    padding-left: 34px;
+    height: 96px;
+}
+.order-section .order-detail-side .follow-requests .order-list li a {
+    color: #000;
+}
+.order-section .order-detail-side .follow-requests .order-list li a:hover {
+    color: #000 !important;
+}
+.order-section .order-detail-side .follow-requests .order-account-list {
+    margin-top: 13px;
+}
+.order-section .order-detail-side .follow-requests .order-account-list h4 {
+    font-size: 20px;
+}
+.order-section .order-detail-side .follow-requests .order-account-list select {
+    width: 41%;
+    font-size: 16px;
+    padding: 8px 2px;
+    margin-top: 10px;
+    margin-left: 12px;
+    /* border-bottom: 2px solid; */
+    background: transparent url(https://img.icons8.com/ios/420/expand-arrow.png) no-repeat;
+    background-color: #fff;
+    background-size: 14px;
+    background-position: 95% center;
+    -webkit-appearance: none;
+    border-bottom: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.order-section .order-detail-side button {
+    background-color: #f5f5f5;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    transition: 0.2s ease-in 0.1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
+     0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.login-section .order-selected h5 {
+    margin-bottom: 16px;
+}
+.login-section .order-selected h5 span {
+    font-weight: bold;
+}
+.login-section .order-selected label {
+    color: #9e9e9e;
+}
+.login-section .order-selected select:hover {
+    border-bottom: 1px solid #000;
+}
+.login-section .order-selected select {
+    background: transparent url(https://img.icons8.com/ios/420/expand-arrow.png) no-repeat;
+    background-color: #fff;
+    background-size: 14px;
+    background-position: 99% center;
+    -webkit-appearance: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 0;
+    border-bottom: 1px solid #9e9e9e !important;
+}
+.login-section .order-selected select.select-country.active {
+    border-bottom: 2px solid #1976d2;
+    color: #1976d2;
+}
+.login-section .order-selected .number-accounts {
+    border-bottom: 1px solid #9e9e9e;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding: 0px 3px 12px;
+    font-size: 17px !important;
+}
+.login-section .order-selected .number-accounts:hover {
+    border-bottom: 1px solid #000;
+}
+.login-section .order-selected .login-btn {
+    background-color: #f5f5f5;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    transition: 0.2s ease-in 0.1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.thankyou-page .thankyou-btn {
+    background-color: #f5f5f5;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    transition: 0.2s ease-in 0.1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    width: 14%;
+    margin: auto;
+}
+@media (max-width: 991px) {
+    .order-section .order-detail-side .follow-requests .order-account-list {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .order-section .order-detail-side .follow-requests .order-account-list {
+        margin-top: 0px;
+    }
+    .thankyou-page .thankyou-btn {
+        width: 25%;
+    }
+}
+@media (max-width: 480px) {
+    .thankyou-page .thankyou-btn {
+        width: 35%;
+    }
+}
+@media (max-width: 390px) {
+    .order-section .order-detail-side .follow-requests .order-list {
+        height: inherit;
+    }
+}

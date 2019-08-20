@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>index</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-countryselector.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  {% block css %}
+  {% endblock %}
+<!-- 	<script src="assets/js/wow.js"></script> -->
+</head>
+<body>
+  <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8; display: none;">
+<p style="position: fixed; color: White; top: 45%; left: 45%;">
+
+<img src="{% static 'img/loading.gif' %}" class="img-fluid" style="width: 20%;">
+</p>
+</div>
+<!-- nav bar start -->
+	<div class="wraper">
+		{% include 'header.html' %}
+		{% block content  %}
+		{% endblock %}
+		{% include 'footer.html' %}
+	</div>
+<!-- Section Part End --->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/jquery.countrySelector.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{% static 'js/insta.js' %}"></script>
+<!-- <script>
+	$(function(){
+		new WOW().init(); 
+	});
+</script> -->
+<script>
+$(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 30) {
+                $("nav.navbar").css('background-color', 'rgba(0, 0, 0, 0.48)');
+            } else {
+                $("nav.navbar").css('background-color', '#00000014 ');
+            }
+        });
+        var $inputItem = $(".js-inputWrapper");
+        $inputItem.length && $inputItem.each(function() {
+          var $this = $(this),
+              $input = $this.find(".formRow--input"),
+              placeholderTxt = $input.attr("placeholder"),
+              $placeholder;
+          
+          $input.after('<span class="placeholder">' + placeholderTxt + "</span>"),
+          $input.attr("placeholder", ""),
+          $placeholder = $this.find(".placeholder"),
+          
+          $input.val().length ? $this.addClass("active") : $this.removeClass("active"),
+              
+          $input.on("focusout", function() {
+              $input.val().length ? $this.addClass("active") : $this.removeClass("active");
+          }).on("focus", function() {
+              $this.addClass("active");
+          });
+        }); 
+        $('.select-country').click(function() {
+          $('.select-country').addClass('active');
+          $(this).removeClass('active');
+        });
+      });
+</script>
+<script>
+  var token="{{csrf_token}}";
+</script>
+  {% block script %}
+  {% endblock %}
+</body>
+</html>

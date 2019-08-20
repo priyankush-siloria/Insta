@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="login-section py-5">
+      <h1 class="text-center pt-5">
+        Forgot your password? No problem!
+      </h1>
+      <h4 class="text-center forget-heading mt-4 mb-5">
+        Please reset your password using the form below.<br>
+        You will receive a verification code to your registered email.
+      </h4>
+      {% if messages %}
+      {% for msg in messages %}
+      {{msg}}
+      {% endfor %}
+      {% endif %}
+      <div class="login-form">
+        <div class="login-form-bg">
+          <div class="text-center">
+            <h2 class="login-headline text-left">
+              Email
+            </h2>
+          </div>
+          <form action="{% url 'forgot_password' %}" method="post">
+            {% csrf_token %}
+            <fieldset class="formRow mb-2">
+              <div class="formRow--item">
+                <label for="email" class="formRow--input-wrapper js-inputWrapper">
+                  <input type="email" class="formRow--input js-input" name='forgot_email' id="email" placeholder="Email">
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-default btn-block login-btn my-3">RECOVER</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  {% endblock %}
