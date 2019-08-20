@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Html -->
+<section class="login-section py-5">
+  <h1 class="text-center py-5 mb-5">
+    Simple, Fair Pricing
+  </h1>
+  <div class="container">
+	  <div class="row">
+	  	<div class="offset-md-1 offset-lg-1 offset-xl-1"></div>
+	  	<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 mb-3">
+	  		<div class="order-section">
+	  			<div class="order-detail-side py-4 px-4">
+	  				<h2 class="order-pricing-heading">Standard</h2>
+					<h2 class="price-month"><span>$15/</span> month</h2>
+					<div class="follow-requests my-4">
+						<h3>Follow Requests</h3>
+						<ul class="order-list">
+							<li><a href="#">Auto Accepts Two Times per day.</a></li>
+							<li><a href="#">Includes free 3 day trial.</a></li>
+							<li><a href="#">Cancel Anytime</a></li>
+						</ul>
+						<form action="{% url 'buy_plan' %}" method="get">
+						{% csrf_token %}
+						<div class="order-account-list">
+							<h4 class="my-2">Number of accounts? 
+								<select name="number_of_account">
+									
+									<option selected value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</h4>
+						</div>
+						<input type="hidden" name="selected_package" value="standard">
+						<button type="submit"  class="btn btn-light text-center">Order Now !!</button>
+						</form>
+					</div>
+					
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 mb-3">
+	  		<div class="order-section">	
+	  			<div class="order-detail-side py-4 px-4">
+	  				<h2 class="order-pricing-heading">Premium</h2>
+					<h2 class="price-month"><span>$20/</span> month</h2>
+					<div class="follow-requests my-4">
+						<h3>Follow Requests</h3>
+						<ul class="order-list">
+							<li><a href="#">Auto Accepts Four Times per day.</a></li>
+							<li><a href="#">You can manually accept using a button(website&app)</a></li>
+							<li><a href="#">Early App Access</a></li>
+							<li><a href="#">Cancel AnyTime</a></li>
+						</ul>
+						<form action="{% url 'buy_plan' %}" method="get">
+							{% csrf_token %}
+						<div class="order-account-list">
+							<h4 class="my-2">Number of accounts? 
+								<select name="number_of_account">
+									<option selected value="1">1</option>					<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</h4>
+						</div>
+							<input type="hidden" name="selected_package" value="premium">
+							<button type="submit" class="btn btn-light text-center">Order Now !!
+							</button>
+					</form>
+					</div>
+				
+			  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="offset-md-1 offset-lg-1 offset-xl-1"></div>
+	  </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block script %}
+
+<!--js -->
+
+{% endblock %}

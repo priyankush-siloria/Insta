@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="login-section py-5">
+      <h1 class="text-center py-5 mb-5">
+        Submit a Request
+      </h1>
+
+      <div class="login-form">
+        <div class="login-form-bg">
+          {% if messages %}
+            {% for msg in messages %}
+              {{msg}}
+            {% endfor %}
+          {% endif %}
+          <form action="{% url 'contact_us' %}" method="post">
+            {% csrf_token %}
+            <fieldset class="formRow mb-2">
+              <div class="formRow--item">
+                <label for="name" class="formRow--input-wrapper js-inputWrapper">
+                  <input type="text" class="formRow--input js-input" id="contact_email" name="contact_email" placeholder="Your email address">
+                </label>
+         
+              </div>
+            </fieldset>
+            <fieldset class="formRow mb-2">
+              <div class="formRow--item">
+                <label for="name" class="formRow--input-wrapper js-inputWrapper">
+                  <input type="text" class="formRow--input js-input" id="email_subject" placeholder="Subject" name="email_subject">
+                </label>
+      
+              </div>
+            </fieldset>
+            <fieldset class="formRow mb-2">
+              <div class="formRow--item">
+                <label for="text" class="formRow--input-wrapper js-inputWrapper">
+                  <textarea class="formRow--input js-input" id="email_desc" name="email_desc" placeholder="Description"></textarea>
+                </label>
+   
+   
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-default btn-block login-btn my-3">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+{% endblock %}

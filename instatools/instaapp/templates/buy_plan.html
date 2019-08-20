@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Html -->
+<section class="login-section py-5">
+  <h1 class="text-center py-5 mb-5">
+    Order Placement
+  </h1>
+  <div class="login-form">
+  	<div class="login-form-bg">
+  		<div class="order-selected">
+        <form>
+	  		<h5>You’ve selected:- <span>{{selected_package.user_package}}</span></h5>
+		  		<fieldset class="formRow mb-2">
+	              	<div class="formRow--item">
+		                <label for="email" class="formRow--input-wrapper js-inputWrapper">
+		                  <input type="text" class="formRow--input js-input" id="email" name="email" placeholder="Email or Username" required>
+		                </label>
+              		</div>
+            	</fieldset>
+            	<fieldset class="formRow mb-2">
+	              	<div class="formRow--item">
+		                <label for="insta_password" class="formRow--input-wrapper js-inputWrapper">
+		                  <input type="password"  class="formRow--input js-input" id="insta_password" placeholder="Password" required>
+		                </label>
+              		</div>
+            	</fieldset>
+            	<fieldset class="formRow mt-4 mb-2">
+            		<label for="">Country</label>
+            		<select class="form-control select-country active" data-role="country-selector" name="country" id='country'></select>
+            	</fieldset>
+            	<fieldset class="formRow mb-2 mt-5">
+	              	<div class="formRow--item">
+		                <label for="accounts" class="formRow--input-wrapper js-inputWrapper">
+		                  <input type="text" class="formRow--input js-input" id="" readonly placeholder="{{selected_package.user_account}}">
+		                  Number of Instagram Accounts:
+		                </label>
+              		</div>
+            	</fieldset>
+            	<button type="button" id='test_insta_account' class="btn btn-default btn-block login-btn mt-4">Test Insta Account. </button>
+            </form>
+  		</div>
+
+  	</div>
+    <div style="display: none;" id="paypal_div">
+    <center>{{form.render}}</center>
+  </div>
+  </div>
+
+</section>
+{% endblock %}
+
+{% block script %}
+
+<!--js -->
+{% endblock %}
